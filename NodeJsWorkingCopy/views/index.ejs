@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html ng-app="CDSApp">
+<title>myVoice</title>
+<!-- http://www.michaelbromley.co.uk/blog/108/paginate-almost-anything-in-angularjs -->
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>myVoice</title>
+    <!-- core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/font-awesome.min.css" rel="stylesheet">
+    <link href="../css/animate.min.css" rel="stylesheet">
+    <link href="../css/prettyPhoto.css" rel="stylesheet">
+    <link href="../css/main.css" rel="stylesheet">
+    <link href="../css/responsive.css" rel="stylesheet">
+    <link href="../css/newstyle.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="stylesheet" type="text/css" href="./css/angular-chart.css">
+    <script src="../js/angular/angular.js"></script>
+    <script src="../js/angular/angular-resource.js"></script>
+    <script src="../js/angular/angular-route.js"></script>
+    <script src="../js/angular/angular-ui-router.min.js"></script>
+    <script src="../js/charts/chart.js"></script>
+    <script src="../js/charts/angular-chart.js"></script>
+    <script src="../js/ui-bootstrap-tpls.js"></script>
+    <script src="../js/angular-animate.js"></script>
+</head>
+
+<body class="homepage">
+    <header id="header">
+        <!--<div class="top-bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-xs-4">
+                        <div class="top-number"><p>2,50,711 Users & Growing  | 50243 Requests Posted  | 30241 Resolved</p></div>
+                    </div>
+                    <div class="col-sm-6 col-xs-8">
+                       <div class="social">
+                            <ul class="social-share">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li> 
+                                <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                                <li><a href="#"><i class="fa fa-skype"></i></a></li>
+                            </ul>
+                            <div class="search">
+                                <form role="form">
+                                    <input type="text" class="search-form" autocomplete="off" placeholder="Search">
+                                    <i class="fa fa-search"></i>
+                                </form>
+                           </div>
+                       </div>
+                    </div>
+                </div>
+            </div>  
+        </div>-->
+        <!--/.top-bar-->
+        <nav class="navbar navbar-inverse" role="banner">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="javascript:void(0)" style="cursor:default"><img style="margin-left: 20px;" src="images/logo_web.png" alt="logo"></a>
+                </div>
+                <div class="collapse navbar-collapse navbar-right">
+                    <ul class="nav navbar-nav" ng-if="!isLogin">
+                        <li><a class="active" ui-sref="slider">Home</a></li>
+                        <!--  <li><a href="about-us.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages <i class="fa fa-angle-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="blog-item.html">Blog Single</a></li>
+                                <li><a href="pricing.html">Pricing</a></li>
+                                <li><a href="404.html">404</a></li>
+                                <li><a href="shortcodes.html">Shortcodes</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="blog.html">Blog</a></li> -->
+                        <li><a ui-sref="login">Login</a></li>
+                        <li><a ui-sref="signup">Sign Up</a></li>
+                        <!-- <li><a ui-sref="dashboard">Dashboard</a></li> -->
+                        <li><a ui-sref="contact">Contact Us</a></li>    
+                    </ul>
+                    <ul class="nav navbar-nav" ng-if="isLogin">
+                        <li class="dropdown" style="margin-right:65px;">
+                            
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-user" style="color:#fff;"></span>&nbsp;&nbsp;User name <span class="caret"></span></a>
+                          <ul class="dropdown-menu">
+                            <li><a href="">Profile</a></li>
+                            <!-- <li role="separator" class="divider"></li> -->
+                            <li><a href="#/mycomments" >Mycomments</a></li>
+                            <li><a href="" ng-click="logout()">Logout</a></li>
+                          </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--/.container-->
+        </nav>
+        <!--/nav-->
+    </header>
+    <div class="content-view container-fluid" ui-view>
+    </div>
+    <!--/#bottom-->
+    <footer id="footer" class="midnight-blue">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        &copy; 2016 <a target="_blank" href="http://shapebootstrap.net/" title="myVoice powered by OSI">myVoice</a>. All Rights Reserved.
+                    </div>
+                    <div class="col-sm-6">
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--/#footer-->
+    <script src="../app/app.js"></script>
+    <script src="../app/controllers/chartsController.js"></script>
+    <script src="../app/controllers/loadController.js"></script>
+    <script src="../app/controllers/dashboardController.js"></script>
+    <script src="../app/controllers/dboardGraphController.js"></script>
+    <script src="../app/controllers/myRequestsController.js"></script>
+    <script src="../app/controllers/contactController.js"></script>
+    <script src="../app/controllers/viewRequestController.js"></script>
+	<script src="../app/controllers/allRequestsController.js"></script>
+    <script src="../app/controllers/postRequestController.js"></script>
+    <script src="../app/controllers/viewOtherRequestController.js"></script>
+    <script src="../app/services/CitizenFactory.js"></script>
+    <script src="../app/services/graphFactory.js"></script>
+    <script src="../app/services/myrequestfactory.js"></script>
+    <script src="../app/services/dashboardfactory.js"></script>
+    <script src="../js/dirPagination.js"></script>
+    <script src="../js/jquery.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/jquery.prettyPhoto.js"></script>
+    <script src="../js/jquery.isotope.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/wow.min.js"></script>
+    <script src="http://maps.googleapis.com/maps/api/js?libraries=places"></script>
+    <script src="https://cdn.jsdelivr.net/ngstorage/0.3.6/ngStorage.min.js"></script>
+    <script>
+    $(document).ready(function() {
+        $(".zc-rel").css("height", "180px");
+
+    });
+    </script>
+</body>
+</body>
+
+</html>

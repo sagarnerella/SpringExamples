@@ -1,0 +1,41 @@
+<div class="row myRequests-section">
+    <div class="col-lg-3">
+    </div>
+    <div class="col-lg-9">
+        <h3>My Requests</h3>
+        <div ng-repeat="top in myrequests">
+            <div class="row request-list-tile">
+                <div class="col-lg-3" style="padding-left: 0px;">
+                    <img alt="Request Image" src="app/myRequestImages/roads.PNG" style="min-height: 180px;" class="img-responsive" />
+                </div>
+                <div class="col-lg-9">
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <a href="" ng-click="viewRequestDetails(top)" ui-sref="dashboard.viewrequest" title="click here to view in detail"><h3>{{top.request_category_name}}</h3></a>
+                        </div>
+                        <div class="col-lg-9">
+                            <button  ng-click="myvote(top)" style="margin-top: 14px;" class="btn btn-default pull-right"><span class="glyphicon glyphicon-thumbs-up"></span>&nbsp;&nbsp;Likes&nbsp;&nbsp;({{top.votes}})</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <p>{{top.request_title}}&nbsp;&nbsp;/&nbsp;&nbsp;{{top.priority_name}}&nbsp;&nbsp;/&nbsp;&nbsp;{{top.status_desc}}</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <p>{{top.request_description}}</p>
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <div class="col-lg-12">
+                            <label class="myRequests-label"><span class="glyphicon glyphicon-map-marker"></span>&nbsp;{{top.location}}</label>
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+         <uib-pagination total-items="bigTotalItems" ng-model="bigCurrentPage" max-size="maxSize" class="pagination-lg" boundary-link-numbers="true" num-pages="numPages"></uib-pagination>
+    </div>
+</div>

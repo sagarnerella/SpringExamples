@@ -1,0 +1,7 @@
+<html>
+<form name="loginForm">
+<input type ="text" ng-model="user.username"/><br>
+<input type ="password" ng-model="user.password"/><br>
+<button  ng-disabled="!user.username || !user.password" ng-click="login()">Login</button>
+</form>
+</html>

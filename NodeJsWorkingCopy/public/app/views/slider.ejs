@@ -1,0 +1,470 @@
+<section id="main-slider" class="no-margin">
+    <div class="carousel slide">
+        <ol class="carousel-indicators">
+            <li data-target="#main-slider" data-slide-to="0" class="active"></li>
+            <li data-target="#main-slider" data-slide-to="1"></li>
+            <li data-target="#main-slider" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="item active" style="background-image: url(images/slider/bg1.jpg)">
+                <div class="container">
+                    <div class="row slide-margin">
+                        <div class="col-sm-6">
+                            <div class="carousel-content">
+                                <h1 class="animation animated-item-1">Make Your City Better</h1>
+                                <h2 class="animation animated-item-2">Improve your street, to improve your neighbourhood, to improve your city. Improve your quality-of-life.</h2>
+                                <!-- <a class="btn-slide animation animated-item-3" href="#">Read More</a> -->
+                            </div>
+                        </div>
+                        <div class="col-sm-6 hidden-xs animation animated-item-4">
+                            <div class="slider-img">
+                                <img src="images/slider/img1.png" class="img-responsive">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/.item-->
+            <div class="item" style="background-image: url(images/slider/bg2.jpg)">
+                <div class="container">
+                    <div class="row slide-margin">
+                        <div class="col-sm-6">
+                            <div class="carousel-content">
+                                <h1 class="animation animated-item-1">Lorem ipsum dolor sit amet consectetur adipisicing elit</h1>
+                                <h2 class="animation animated-item-2">Accusantium doloremque laudantium totam rem aperiam, eaque ipsa...</h2>
+                                <a class="btn-slide animation animated-item-3" href="#">Read More</a>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 hidden-xs animation animated-item-4">
+                            <div class="slider-img">
+                                <img src="images/slider/img2.png" class="img-responsive">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/.item-->
+            <div class="item" style="background-image: url(images/slider/bg3.jpg)">
+                <div class="container">
+                    <div class="row slide-margin">
+                        <div class="col-sm-6">
+                            <div class="carousel-content">
+                                <h1 class="animation animated-item-1">Lorem ipsum dolor sit amet consectetur adipisicing elit</h1>
+                                <h2 class="animation animated-item-2">Accusantium doloremque laudantium totam rem aperiam, eaque ipsa...</h2>
+                                <a class="btn-slide animation animated-item-3" href="#">Read More</a>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 hidden-xs animation animated-item-4">
+                            <div class="slider-img">
+                                <img src="images/slider/img3.png" class="img-responsive">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/.item-->
+        </div>
+        <!--/.carousel-inner-->
+    </div>
+    <!--/.carousel-->
+    <a class="prev hidden-xs" href="#main-slider" data-slide="prev">
+        <i class="fa fa-chevron-left"></i>
+    </a>
+    <a class="next hidden-xs" href="#main-slider" data-slide="next">
+        <i class="fa fa-chevron-right"></i>
+    </a>
+</section>
+<!--/#main-slider-->
+<section id="feature" style="    background-color: #54575C;padding:14px 0 0 14px">
+    <div class="container">
+        <div class="row">
+            <div class="features">
+                <div class="col-md-4 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+                    <div class="feature-wrap">
+                        <i class="fa fa-bullhorn"></i>
+                        <h1 style="color: #fff; line-height: 2.1;margin-bottom:0px;">{{population.Citizencount}}</h1>
+                        <h2 style="color: #fff;margin-top:0px;">Users & growing</h2>
+                    </div>
+                </div>
+                <!--/.col-md-4-->
+                <div class="col-md-4 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+                    <div class="feature-wrap">
+                        <i class="fa fa-comments"></i>
+                        <h1 style="color: #fff; line-height: 2.1;margin-bottom:0px;">{{population.Requestcount}}</h1>
+                        <h2 style="color: #fff;margin-top:0px;">Requests Posted</h2>
+                    </div>
+                </div>
+                <!--/.col-md-4-->
+                <div class="col-md-4 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+                    <div class="feature-wrap">
+                        <i class="fa fa-cloud-download"></i>
+                        <h1 style="color: #fff; line-height: 2.1;margin-bottom:0px;">{{population.Resolutioncount}}</h1>
+                        <h2 style="color: #fff;margin-top:0px;">Requests Resolved</h2>
+                    </div>
+                </div>
+                <!--/.col-md-4-->
+            </div>
+            <!--/.services-->
+        </div>
+        <!--/.row-->
+    </div>
+    <!--/.container-->
+</section>
+<section id="recent-works">
+    <div class="container">
+        <div class="center wow fadeInDown">
+            <h2>Emotions in your city</h2>
+            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                <br> et dolore magna aliqua. Ut enim ad minim veniam</p>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <img src="images/sadinactive.png" style="margin-left: 116px;height: 120px; margin-bottom:5px;" alt="Sad" class="img-responsive img-circle">
+                        <h2 style="text-align:center">{{moodoverall.sadcount}}% Sad</h2>
+                    </div>
+                    <div class="col-lg-4">
+                        <img src="images/angryinactive.png" style="margin-left: 116px;height: 120px; margin-bottom:5px;background-color:#f3785f;" alt="Angry" class="img-responsive img-circle">
+                        <h2 style="text-align:center;color:red;">{{moodoverall.angrycount}}% Angry</h2>
+                    </div>
+                    <div class="col-lg-4">
+                        <img src="images/happyinactive.png" style="margin-left: 116px;height: 120px;margin-bottom:5px;" alt="Happy" class="img-responsive img-circle">
+                        <h2 style="text-align:center;color:green;">{{moodoverall.happycount}}% Happy</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/.container-->
+</section>
+<section id="feature">
+    <div class="container">
+        <div class="center wow fadeInDown">
+            <h2>Features</h2>
+            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                <br> et dolore magna aliqua. Ut enim ad minim veniam</p>
+        </div>
+        <div class="row">
+            <div class="features">
+                <div class="col-md-4 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+                    <div class="feature-wrap" style="text-align: center">
+                        <i class="fa fa-bullhorn" style="float: none;"></i>
+                        <h2>Post a Request</h2>
+                        <h3>Post requests on civic issues in your neighbourhood.Vote ups prioritise your request. More the vote ups from friends and neighbours, higher the priority.Interact with your civic authorities and elected representatives to ensure your request is resolved</h3>
+                    </div>
+                </div>
+                <!--/.col-md-4-->
+                <div class="col-md-4 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+                    <div class="feature-wrap" style="text-align: center">
+                        <i class="fa fa-comments" style="float: none;"></i>
+                        <h2>My Requests</h2>
+                        <h3>Vote ups prioritise your request. More the vote ups from friends and neighbours, higher the priority.</h3>
+                    </div>
+                </div>
+                <!--/.col-md-4-->
+                <div class="col-md-4 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+                    <div class="feature-wrap" style="text-align: center">
+                        <i class="fa fa-cloud-download" style="float: none;"></i>
+                        <h2>Other Requests</h2>
+                        <h3>Interact with your civic authorities and elected representatives to ensure your request is resolved.</h3>
+                    </div>
+                </div>
+                <!--/.col-md-4-->
+            </div>
+            <!--/.services-->
+        </div>
+        <!--/.row-->
+    </div>
+    <!--/.container-->
+</section>
+<!--/#feature-->
+<section id="recent-works">
+    <div class="container">
+        <div class="center wow fadeInDown">
+            <h2>Recent Works</h2>
+            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                <br> et dolore magna aliqua. Ut enim ad minim veniam</p>
+        </div>
+        <div class="row">
+        <div ng-repeat="top in requestlist">
+            <div class="col-xs-12 col-sm-4 col-md-3">
+                    <div class="recent-work-wrap">
+                        <img class="img-responsive" src="images/portfolio/recent/item1.png" alt="">
+                            <div class="overlay">
+                                    <div class="recent-work-inner">
+                                        <h3><a href="#">Request {{$index+1}}</a> </h3>
+                                        <p>{{top.first_name}}  {{top.location}}  {{top.created_date}}  {{top.count}}  {{top.status_name}} </p>
+                                        <a class="preview" href="images/portfolio/full/item1.png" rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>
+                                    </div>
+                            </div>
+                    </div>
+            </div>
+            </div>
+        </div>
+        <!--/.row-->
+    </div>
+    <!--/.container-->
+</section>
+<!--/#recent-works-->
+<section id="services" class="service-item">
+    <div class="container">
+        <div class="center wow fadeInDown">
+            <h2>Statistics</h2>
+            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                <br> et dolore magna aliqua. Ut enim ad minim veniam</p>
+        </div>
+        <div class="row">
+            <div class="col-sm-3 col-md-5 col-md-offset-1">
+                <div class="media services-wrap wow fadeInDown">
+                    <div class="media-body">
+                        <h3 class="media-heading">By Status</h3>
+                        <div id='pieChart' class="chart_Class">
+                            <canvas id="pie" class="chart chart-pie" data="data" labels="labels" colours="colors" legend='legend'>
+                            </canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 col-md-5 ">
+                <div class="media services-wrap wow fadeInDown">
+                    <div class="media-body">
+                        <h3 class="media-heading">By Category</h3>
+                        <div id='areaChart' class="chart_Class">
+                            <canvas id="doughnut" class="chart chart-doughnut" data="categorydata" labels="categorylabels" colours="colors" legend="legend">
+                            </canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 col-md-5 col-md-offset-1">
+                <div class="media services-wrap wow fadeInDown">
+                    <div class="media-body">
+                        <h3 class="media-heading">By Location</h3>
+                        <div id='columnChart' class="chart_Class">
+                            <canvas id="pie" class="chart chart-pie" data="locationdata" labels="locationlabels" colours="colors" legend='legend'>
+                            </canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 col-md-5">
+                <div class="media services-wrap wow fadeInDown">
+                    <div class="media-body">
+                        <h3 class="media-heading">Mood Factor</h3>
+                        <div id='areaChart' class="chart_Class">
+                            <canvas id="doughnut" class="chart chart-doughnut" data="mooddata" labels="moodlabels" colours="colors" legend="legend">
+                            </canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--/.row-->
+    </div>
+    <!--/.container-->
+</section>
+<!--/#services-->
+<section id="middle">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 wow fadeInDown">
+                <div class="skill">
+                    <h2>Request Tracking</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <div class="progress-wrap">
+                        <h3 style="text-align:right">OPEN</h3>
+                        <div class="progress">
+                            <div class="progress-bar  color1" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:{{percentage.opencount}}%">
+                                <span class="bar-width">{{percentage.opencount}}%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-wrap">
+                        <h3 style="text-align:right">IN PROGRESS</h3>
+                        <div class="progress">
+                            <div class="progress-bar color2" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: {{percentage.inprogresscount}}%">
+                                <span class="bar-width">{{percentage.inprogresscount}}%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-wrap">
+                        <h3 style="text-align:right">RESOLVED</h3>
+                        <div class="progress">
+                            <div class="progress-bar color3" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: {{percentage.resolvedcount}}%">
+                                <span class="bar-width">{{percentage.resolvedcount}}%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-wrap">
+                        <h3 style="text-align:right">CLOSED</h3>
+                        <div class="progress">
+                            <div class="progress-bar color4" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: {{percentage.resolvedcount}}%">
+                                <span class="bar-width">{{percentage.resolvedcount}}%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/.col-sm-6-->
+            <div class="col-sm-6 wow fadeInDown">
+                <div class="accordion">
+                    <h2>Why People like us?</h2>
+                    <div class="panel-group" id="accordion1">
+                        <div class="panel panel-default">
+                            <div class="panel-heading active">
+                                <h3 class="panel-title">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseOne1">
+                                  Lorem ipsum dolor sit amet
+                                  <i class="fa fa-angle-right pull-right"></i>
+                                </a>
+                              </h3>
+                            </div>
+                            <div id="collapseOne1" class="panel-collapse collapse in">
+                                <div class="panel-body">
+                                    <div class="media accordion-inner">
+                                        <div class="pull-left">
+                                            <img class="img-responsive" src="images/accordion1.png">
+                                        </div>
+                                        <div class="media-body">
+                                            <h4>Adipisicing elit</h4>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseTwo1">
+                                  Lorem ipsum dolor sit amet
+                                  <i class="fa fa-angle-right pull-right"></i>
+                                </a>
+                              </h3>
+                            </div>
+                            <div id="collapseTwo1" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseThree1">
+                                  Lorem ipsum dolor sit amet
+                                  <i class="fa fa-angle-right pull-right"></i>
+                                </a>
+                              </h3>
+                            </div>
+                            <div id="collapseThree1" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseFour1">
+                                  Lorem ipsum dolor sit amet
+                                  <i class="fa fa-angle-right pull-right"></i>
+                                </a>
+                              </h3>
+                            </div>
+                            <div id="collapseFour1" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/#accordion1-->
+                </div>
+            </div>
+        </div>
+        <!--/.row-->
+    </div>
+    <!--/.container-->
+</section>
+<!--/#middle-->
+<section id="content">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 wow fadeInDown">
+                <h2 style="font-size: 28px;text-align:center;">Success Stories</h2>
+                <div id="storiesCarousel" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#storiesCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#storiesCarousel" data-slide-to="1"></li>
+                        <li data-target="#storiesCarousel" data-slide-to="2"></li>
+                        <li data-target="#storiesCarousel" data-slide-to="3"></li>
+                    </ol>
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox" >
+                    
+                        
+                        <div class="item active" ng-repeat="usersuccessstory in usersuccessstories" ng-if= "$index == 0">
+                            <div class="row">
+                                <div class="col-lg-8 col-lg-offset-2">
+                                    <div class="testimonial">
+                                        <div class="media testimonial-inner">
+                                            <div class="pull-left">
+                                                <img class="img-responsive img-rounded" src="images/testimonials1.png">
+                                            </div>
+                                            <div class="media-body">
+                                                <p>{{usersuccessstory.success_stories_desc}}</p>
+                                                <span><strong>-{{usersuccessstory.fullname}}/</strong> {{usersuccessstory.creation_date}}</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                       
+                      </div>
+
+
+                      <div class="item " ng-repeat="usersuccessstory in usersuccessstories" ng-if="$index != 0">
+                            <div class="row">
+                                <div class="col-lg-8 col-lg-offset-2">
+                                    <div class="testimonial">
+                                        <div class="media testimonial-inner">
+                                            <div class="pull-left">
+                                                <img class="img-responsive img-rounded" src="images/testimonials1.png">
+                                            </div>
+                                            <div class="media-body">
+                                                <p>{{usersuccessstory.success_stories_desc}}</p>
+                                                <span><strong>-{{usersuccessstory.fullname}}/</strong> {{usersuccessstory.creation_date}}</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    
+                    </div>
+                    <!-- Left and right controls -->
+                    <a class="left carousel-control" href="#storiesCarousel" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#storiesCarousel" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!--/.row-->
+    </div>
+    <!--/.container-->
+</section>
+<style>
+.zc-license {
+    display: none;
+}
+</style>

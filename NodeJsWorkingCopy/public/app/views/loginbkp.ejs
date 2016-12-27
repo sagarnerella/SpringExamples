@@ -1,0 +1,40 @@
+<div class="container">
+    <div class="row">
+        <div class="col-lg-10 col-lg-offset-1">
+            <h2 style="color:#4e4e4e;">Login</h2>
+            <p style="color:green;">{{successmessage}}</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-4 col-lg-offset-1">
+            <div class="form-login">
+                <form class="login-form" name="logForm">
+                    <div class="form-group" ng-class="{ 'has-error' : logForm.username.$invalid }">
+                    <input type="text" name="username" placeholder="username"  ng-model="user.username" ng-minlength="5" />
+                    <p class="help-block" ng-show="logForm.username.$error.minlength">Enter user name</p>
+                    </div>
+                    <div class="form-group" ng-class="{ 'has-error' : logForm.password.$invalid }">
+                    <input type="password" name="password" placeholder="password"  ng-model="user.password"  ng-minlength="8"/>
+                   <p class="help-block" ng-show="logForm.password.$error.minlength">Enter Password (password should be min of 8 characters)</p>
+                    </div>
+                    <p class="message"><a href="#forget">Forgot Password ? </a> | <a href="#changepassword">Change Password ?</a></p>
+                    <br>
+                    <button  ng-disabled="!user.username || !user.password" ng-click="loginSubmit()">Login</button>
+                    <p class="message">Not registered? <a href="#signup">Create an account</a></p>
+                </form>
+            </div>
+        </div>
+        <div class="col-lg-1"><span style="padding: 14px;background-color:#666;color: #fff;font-weight:600;border:2px solid #ccc;border-radius:6px;position:absolute;top:140px;left:24px;">OR</span></div>
+        <div class="col-lg-4">
+            <div class="form-login">
+                <div>
+                    <p>If you've already linked your myVoice account to one of these services, you can use them to log in:</p>
+                </div>
+                <button class="btn btn-block btn-social btn-facebook fb-btn"><span class="fa fa-facebook"></span>&nbsp;&nbsp;Log in with Facebook</button>
+                <button class="btn btn-block btn-social btn-twitter twitter-btn"><span class="fa fa-twitter"></span>&nbsp;&nbsp;Log in with Twitter</button>
+                <button class="btn btn-block btn-social btn-google googleplus-btn"><span class="fa fa-google"></span>&nbsp;&nbsp;Log in with Google</button>
+            </div>
+        </div>
+        
+    </div>
+</div>

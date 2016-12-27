@@ -1,0 +1,45 @@
+<div class="container">
+    <div class="row">
+        <div class="col-lg-10 col-lg-offset-1">
+            <h1 style="color:#4e4e4e;">Register</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-10 col-lg-offset-1">
+            <div class="form-login">
+                <form class="register-form" name="regForm">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            
+                           
+                            <div class="form-group" ng-class="{ 'has-error' : regForm.mobno.$invalid }">
+                            <input type="text" placeholder="Mobile Number" name="mobno" ng-model="user.mobno"  ng-minlength="10" ng-maxlength="10" />
+                             <p class="help-block" ng-show="regForm.$dirty &&(regForm.mobno.$error.required || regForm.mobno.$error.number)">Please enter a valid mobile number.</p>
+                             <p class="help-block" ng-show="(regForm.mobno.$error.minlength || regForm.mobno.$error.maxlength) && regForm.mobno.$dirty">Mobile No should be min of 10 digits</p>
+                             </div>
+                             <div class="form-group" ng-class="{ 'has-error' : regForm.email.$invalid }">
+                            <input type="email" placeholder="Email ID"  name="email" ng-model="user.email" />
+                             <p class="help-block" ng-show="regForm.$dirty && regForm.email.$error.required">Please enter email id</p>
+                             <p class="help-block" ng-show="regForm.$dirty && regForm.email.$invalid">Enter a valid email id </p>
+                             </div>
+                        </div>
+                        <div class="col-lg-6">
+                             <div class="form-group" ng-class="{ 'has-error' : regForm.password.$invalid }">
+                            <input type="password" placeholder="Password"  name="password" ng-model="user.password" ng-minlength="8"/>
+                               <p class="help-block" ng-show="regForm.$dirty && regForm.password.$error.required">Please enter password</p>
+                             <p class="help-block" ng-show="regForm.$dirty && regForm.password.$error.minlength">Password should be min of 8 characters</p>
+                                   </div>
+                            <div class="form-group" ng-class="{ 'has-error' : regForm.password1.$invalid }"> 
+                            <input type="password" placeholder="Re enter Password" name="password1" ng-model="user.password1" ng-minlength="8" />
+                             <p class="help-block" ng-show="regForm.$dirty && regForm.password1.$error.required">Please enter password</p>
+                             <p class="help-block" ng-show="regForm.$dirty && regForm.password1.$error.minlength">Password should be min of 8 characters</p>
+                                   </div>
+                            <button  ng-disabled="regForm.$invalid"  ng-click="register()">Create</button>
+                            <p class="message">Already registered? <a href="#login">Sign In</a></p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
