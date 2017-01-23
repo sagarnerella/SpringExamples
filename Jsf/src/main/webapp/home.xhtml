@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core">
+<head>
+   <title>JSF Tutorial!</title>
+</head>
+
+<body>
+   #{helloWorld.getMessage()} 
+   #{helloWorld.showManagedPropertyMessage()}<br></br>
+   
+   <!-- Below is used for implicit navigation-->
+   <h:form>
+   <h3>Using JSF outcome</h3>
+   <h:commandButton action="page2" value="ImplicitNavigation" />
+</h:form>
+<!-- end  implicit navigation -->
+
+<!-- Auto navigation start here -->
+
+
+
+<h:form>
+<h:commandButton action="#{helloWorld.autoNavigation}" value="AutoNavigation" actionListener="#{helloWorld.getAnEvent}" id="auto"></h:commandButton>
+</h:form>
+<!-- end  Auto navigation -->
+
+<!-- conditional navigation start here -->
+<h:form>
+<h:commandLink action="#{conditionalBean.conditional}" value="ConditionalNavigation1" actionListener="#{helloWorld.getAnEvent}" id="conditional">
+<f:param name="pageId" value="1"></f:param><br></br>
+</h:commandLink>
+<h:commandLink action="#{conditionalBean.conditional}" value="ConditionalNavigation2">
+<f:param name="pageId" value="2"></f:param>
+</h:commandLink>
+</h:form>
+<!-- end  conditional navigation -->
+
+<!-- forward and reverse navigation start here -->
+<h:form>
+   <h3>Forward</h3>
+   <h:commandButton action="page1" value="Page1" />
+   <h3>Redirect</h3>
+   <h:commandButton action="page1?faces-redirect=true" value="Page1" />
+</h:form>
+
+<!-- end forward and reverse navigation -->
+
+<h:form>
+<h3>Custom Component</h3>
+   <h:commandButton action="customComponent" value="CustomComponent" />
+</h:form>
+</body>
+</html>

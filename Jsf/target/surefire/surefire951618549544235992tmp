@@ -1,0 +1,28 @@
+#surefire
+#Mon Oct 17 19:16:19 IST 2016
+testClassesDirectory=E\:\\OCC_WebService\\OCC_Code\\Jsf\\target\\test-classes
+classPathUrl.3=C\:\\Users\\snerella.OSIUS\\.m2\\repository\\com\\sun\\faces\\jsf-impl\\2.1.7\\jsf-impl-2.1.7.jar
+classPathUrl.2=C\:\\Users\\snerella.OSIUS\\.m2\\repository\\com\\sun\\faces\\jsf-api\\2.1.7\\jsf-api-2.1.7.jar
+useManifestOnlyJar=true
+classPathUrl.1=E\:\\OCC_WebService\\OCC_Code\\Jsf\\target\\classes
+reportsDirectory=E\:\\OCC_WebService\\OCC_Code\\Jsf\\target\\surefire-reports
+classPathUrl.0=E\:\\OCC_WebService\\OCC_Code\\Jsf\\target\\test-classes
+dirscanner.0=directoryScannerOptions
+providerConfiguration=org.apache.maven.surefire.junit.JUnit3Provider
+testSuiteDefinitionTestSourceDirectory=E\:\\OCC_WebService\\OCC_Code\\Jsf\\src\\test\\java
+surefireClassPathUrl.1=C\:\\Users\\snerella.OSIUS\\.m2\\repository\\org\\apache\\maven\\surefire\\surefire-api\\2.7.1\\surefire-api-2.7.1.jar
+surefireClassPathUrl.0=C\:\\Users\\snerella.OSIUS\\.m2\\repository\\org\\apache\\maven\\surefire\\surefire-junit3\\2.7.1\\surefire-junit3-2.7.1.jar
+report.2=org.apache.maven.surefire.report.XMLReporter
+useSystemClassLoader=true
+report.1=org.apache.maven.surefire.report.BriefFileReporter
+report.0=org.apache.maven.surefire.report.ForkingConsoleReporter
+excludes0=**/*$*
+isTrimStackTrace=true
+dirscanner.0.params=E\:\\OCC_WebService\\OCC_Code\\Jsf\\target\\test-classes|[**/Test*.java, **/*Test.java, **/*TestCase.java]|[**/*$*]
+enableAssertions=true
+includes2=**/*TestCase.java
+failIfNoTests=false
+includes1=**/*Test.java
+dirscanner.0.types=java.io.File|java.util.ArrayList|java.util.ArrayList
+includes0=**/Test*.java
+childDelegation=false
